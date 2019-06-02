@@ -5,9 +5,9 @@ import Story from '../Story/Story';
 const StoryList = () => {
     return ( 
         <ol className = {styles.stories}>
-            <Story/>
-            <Story/>
-            <Story/>
+            <Story title = 'Story title' score = '12' author = 'An author' />
+            <Story title = 'Story title' score = '12' author = 'An author' />
+            <Story title = 'Story title' score = '12' author = 'An author' />
         </ol>
     );
 }

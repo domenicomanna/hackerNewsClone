@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Story.module.css';
 
-const Story = () => {
+const Story = (props) => {
     return (
         <li className = {styles.story}>
             <h2 className = {styles.storyTitle}>
-                <a href="#" className={styles.storyLink}> Story title </a>
+                <a href="#" className={styles.storyLink}> {props.title} </a>
             </h2>
-            <p className = {styles.storyDescription}>207 points by author</p>
+            <p className = {styles.storyDescription}>{props.score} points by {props.author} </p>
         </li>
     );
 }
