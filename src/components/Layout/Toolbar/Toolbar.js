@@ -5,6 +5,7 @@ import styles from './Toolbar.module.css';
 const Toolbar = () => {
     return ( 
         <header className = {styles.header}>
+            <h2 className = {styles.logo}> Y </h2>
             <h2 className = {styles.brand}> Hacker News </h2>
         </header>
     );
