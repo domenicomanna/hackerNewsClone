@@ -1,11 +1,11 @@
 import React from 'react';
 import Layout from './components/Layout/Layout';
-import StoryList from './components/StoryList/StoryList';
+import StoryContainer from './containers/StoryContainer/StoryContainer';
 
 function App() {
     return (
         <Layout>
-            <StoryList/>
+            <StoryContainer/>
         </Layout>
     );
 }

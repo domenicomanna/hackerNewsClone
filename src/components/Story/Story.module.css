@@ -4,7 +4,7 @@
 
 .storyTitle{
     font-weight: normal;
-    font-size: 1.7rem;
+    font-size: inherit;
     margin: 0 0 .3rem 0;
 }
 
