@@ -1,0 +1,13 @@
+.stories{
+    padding: 1rem 2rem;
+    margin: 0;
+    background: rgb(246, 246, 239);
+}
+
+.stories > * {
+    margin-bottom: 1.5rem;
+}
+
+.stories > *:last-child{
+    margin-bottom: 0;
+}

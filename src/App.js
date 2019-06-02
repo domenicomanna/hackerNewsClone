@@ -1,15 +1,11 @@
 import React from 'react';
 import Layout from './components/Layout/Layout';
-import Story from './components/Story/Story';
+import StoryList from './components/StoryList/StoryList';
 
 function App() {
     return (
         <Layout>
-            <ol>
-                <Story />
-                <Story />
-                <Story />
-            </ol>
+            <StoryList/>
         </Layout>
     );
 }
