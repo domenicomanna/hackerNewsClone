@@ -1,16 +1,21 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import StoryList from '../../components/StoryList/StoryList';
-import Loader from '../../components/Loader/Loader';
+import Wrapper from '../../components/UI/Wrapper/Wrapper'
+import Loader from '../../components/UI/Loader/Loader';
 
 class StoryContainer extends Component {
     state = {
-        stories : []
+        stories: []
     }
-    
+
     render() {
         return (
-            // <StoryList />
-            <Loader/>
+            <Fragment>
+                <Loader />
+                <Wrapper>
+                    <StoryList/>
+                </Wrapper>
+            </Fragment>
         );
     }
 }

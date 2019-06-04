@@ -1,14 +1,16 @@
-import React  from 'react';
+import React, { Fragment } from 'react';
 import Toolbar from './Toolbar/Toolbar';
-import styles from './Layout.module.css';
+import Wrapper from '../UI/Wrapper/Wrapper';
 
 const Layout = (props) => {
-    return ( 
-        <div className = {styles.container}>
-            <Toolbar/>
+    return (
+        <Fragment>
+            <Wrapper>
+                <Toolbar />
+            </Wrapper>
             {props.children}
-        </div>
+        </Fragment>
     );
 }
- 
+
 export default Layout;
