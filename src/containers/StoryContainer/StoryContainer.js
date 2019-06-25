@@ -1,7 +1,8 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 import StoryList from '../../components/StoryList/StoryList';
 import Wrapper from '../../components/UI/Wrapper/Wrapper'
 import Loader from '../../components/UI/Loader/Loader';
+import ErrorMessage from '../../components/UI/ErrorMessage/ErrorMessage';
 import HackerNewsClient from '../../hackerNewsClient';
 
 class StoryContainer extends Component {
@@ -42,7 +43,7 @@ class StoryContainer extends Component {
         }
 
         if (this.state.error){
-            storiesComponent = <p>HUGE ERROR</p>;
+            storiesComponent = <ErrorMessage/> ;
         }
 
         return (
